@@ -1,0 +1,15 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+.vscode/
+bin/
+gradle/
+
+# Sistema operacional
+.DS_Store
