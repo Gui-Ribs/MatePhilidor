@@ -1,5 +1,5 @@
 GRADLE := ./gradlew
-GRADLW_WINDOWS := ./gradlew.bat
+GRADLW_WINDOWS := .\gradlew.bat
 
 .PHONY: run format check build clean help
 
@@ -7,6 +7,7 @@ GRADLW_WINDOWS := ./gradlew.bat
 run:
 	$(GRADLE) run
 
+## run-windows: compila e executa a aplicação no Windows
 run-windows:
 	$(GRADLW_WINDOWS) run
 
