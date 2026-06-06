@@ -101,7 +101,7 @@ public class InterfaceJogadorBoundary extends Application {
 		legenda.setPadding(new Insets(10, 12, 12, 12));
 		raiz.setBottom(legenda);
 
-		Scene cena = new Scene(raiz, 1000, 1000);
+		Scene cena = new Scene(raiz, 1000, 800);
 		stage.setTitle("Mate de Philidor");
 		stage.setScene(cena);
 		stage.show();
