@@ -101,10 +101,11 @@ public class InterfaceJogadorBoundary extends Application {
 		legenda.setPadding(new Insets(10, 12, 12, 12));
 		raiz.setBottom(legenda);
 
-		Scene cena = new Scene(raiz);
-		stage.setTitle("Mate de Philidor -- UC-01");
+		Scene cena = new Scene(raiz, 1000, 1000);
+		stage.setTitle("Mate de Philidor");
 		stage.setScene(cena);
 		stage.show();
+		stage.centerOnScreen();
 
 		iniciarPartida();
 	}
@@ -199,6 +200,8 @@ public class InterfaceJogadorBoundary extends Application {
 			case BRANCA -> switch (peca.getTipo()) {
 				case CAVALO -> "branca_cavalo.png";
 				case DAMA -> "branca_dama.png";
+				case REI -> "branca_rei.png";
+				case PEAO -> "branca_peao.png";
 				default -> null;
 			};
 
@@ -206,6 +209,7 @@ public class InterfaceJogadorBoundary extends Application {
 				case REI -> "preta_rei.png";
 				case TORRE -> "preta_torre.png";
 				case PEAO -> "preta_peao.png";
+				case DAMA -> "preta_dama.png";
 				default -> null;
 			};
 		};

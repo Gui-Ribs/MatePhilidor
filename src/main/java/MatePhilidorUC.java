@@ -13,6 +13,12 @@ public class MatePhilidorUC {
 	private static final Posicao G7 = new Posicao('g', 7);
 	private static final Posicao F8 = new Posicao('f', 8);
 	private static final Posicao H7 = new Posicao('h', 7);
+	private static final Posicao G1 = new Posicao('g', 1);
+	private static final Posicao G2 = new Posicao('g', 2);
+	private static final Posicao H2 = new Posicao('h', 2);
+	private static final Posicao B2 = new Posicao('b', 2);
+	private static final Posicao B3 = new Posicao('b', 3);
+	private static final Posicao F2 = new Posicao('f', 2);
 
 	private final Tabuleiro tabuleiro;
 	private int etapaAtual;
@@ -28,8 +34,14 @@ public class MatePhilidorUC {
 	private void carregarCenarioInicial() {
 		tabuleiro.adicionarPeca(new Peca(CorPeca.BRANCA, TipoPeca.CAVALO), E5);
 		tabuleiro.adicionarPeca(new Peca(CorPeca.BRANCA, TipoPeca.DAMA), D5);
+		tabuleiro.adicionarPeca(new Peca(CorPeca.PRETA, TipoPeca.DAMA), B2);
 		tabuleiro.adicionarPeca(new Peca(CorPeca.PRETA, TipoPeca.REI), H8);
+		tabuleiro.adicionarPeca(new Peca(CorPeca.BRANCA, TipoPeca.REI), G1);
 		tabuleiro.adicionarPeca(new Peca(CorPeca.PRETA, TipoPeca.PEAO), G7);
+		tabuleiro.adicionarPeca(new Peca(CorPeca.BRANCA, TipoPeca.PEAO), G2);
+		tabuleiro.adicionarPeca(new Peca(CorPeca.BRANCA, TipoPeca.PEAO), H2);
+		tabuleiro.adicionarPeca(new Peca(CorPeca.BRANCA, TipoPeca.PEAO), B3);
+		tabuleiro.adicionarPeca(new Peca(CorPeca.BRANCA, TipoPeca.PEAO), F2);
 		tabuleiro.adicionarPeca(new Peca(CorPeca.PRETA, TipoPeca.TORRE), F8);
 		tabuleiro.adicionarPeca(new Peca(CorPeca.PRETA, TipoPeca.PEAO), H7);
 	}
